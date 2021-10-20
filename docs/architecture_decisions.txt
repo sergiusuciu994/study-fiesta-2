@@ -1,0 +1,7 @@
+Design decisions
+We will split the Person logic into it's own microservice followed by the Location logic
+We consider implementing a REST API for the endpoints used by the Frontend component
+- We consider this as it will have little dev overhead for potential future components such as mobile -
+We consider moving the internal logic related to Persons and Locations from the Connection Service
+- We consider implementing gRPC for the communication between the logic that need a performance boost -
+- We consider implementing a queue after the endpoints that ingest data so the load on the database would be lighter -
